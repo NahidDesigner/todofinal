@@ -33,4 +33,4 @@ export const router = createBrowserRouter([
     ]
   },
   { path: '*', element: <Navigate to="/app" replace /> }
-])
+], { basename: (import.meta as any).env.BASE_URL || (import.meta as any).env.VITE_BASE_PATH || '/' })
