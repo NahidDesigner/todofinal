@@ -3,11 +3,11 @@ importScripts('https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js
 importScripts('https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging-compat.js');
 
 firebase.initializeApp({
-  apiKey: self.FIREBASE_API_KEY,          // or inline your web config
-  authDomain: self.FIREBASE_AUTH_DOMAIN,
-  projectId: self.FIREBASE_PROJECT_ID,
-  messagingSenderId: self.FIREBASE_MESSAGING_SENDER_ID,
-  appId: self.FIREBASE_APP_ID,
+  apiKey: "AIzaSyBjs7MeQuK-BlQT5cgtBRD7iqSd3sByrtk",
+  authDomain: "smart-todo-b419c.firebaseapp.com",
+  projectId: "smart-todo-b419c",
+  messagingSenderId: "671151709526",
+  appId: "1:671151709526:web:51e7e1a5ed0856816e4af7",
 });
 const messaging = firebase.messaging();
 
