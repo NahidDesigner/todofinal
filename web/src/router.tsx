@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from 'react-router-dom'
+import { createHashRouter, Navigate } from 'react-router-dom'
 import App from './App'
 import AuthPage from './pages/AuthPage'
 import Dashboard from './pages/Dashboard'
@@ -15,7 +15,7 @@ function ProtectedRoute({ children }: { children: JSX.Element }) {
   return children
 }
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   { path: '/auth', element: <AuthPage /> },
   {
     path: '/app',
@@ -33,4 +33,4 @@ export const router = createBrowserRouter([
     ]
   },
   { path: '*', element: <Navigate to="/app" replace /> }
-], { basename: (import.meta as any).env.BASE_URL || (import.meta as any).env.VITE_BASE_PATH || '/' })
+])

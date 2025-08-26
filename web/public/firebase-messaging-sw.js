@@ -13,6 +13,6 @@ const messaging = firebase.messaging();
 
 self.addEventListener('notificationclick', event => {
   event.notification.close();
-  const url = event.notification?.data?.url || (self.location?.origin + (self.__BASE_PATH__ || '/todo/') + 'app');
+  const url = event.notification?.data?.url || (self.location?.origin + '/todo/#/app');
   event.waitUntil(clients.openWindow(url));
 });
